@@ -18,6 +18,7 @@ class GalleryFilms extends Component {
 
       if (resp.ok) {
         const data = await resp.json();
+
         this.setState({ films: data.Search ? data.Search.slice(0, 6) : [], loading: false });
       } else {
         throw new Error("Errore nella fetch");

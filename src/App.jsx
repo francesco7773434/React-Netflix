@@ -5,6 +5,9 @@ import GalleryFilms from "./components/GalleryFilms";
 import GenresBar from "./components/GenresBar";
 import MyFooter from "./components/MyFooter";
 import TopBar from "./components/TopBar";
+{
+  /*import MyProfile from "./components/MyProfile";*/
+}
 
 function App() {
   return (
@@ -15,6 +18,7 @@ function App() {
       <GalleryFilms titles="batman" genre="Batman" />
       <GalleryFilms titles="superman" genre="Superman" />
       <MyFooter />
+      {/*<MyProfile />*/}
     </>
   );
 }
